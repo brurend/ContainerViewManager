@@ -1,0 +1,6 @@
+framework module Pods_ContainerViewManager_Tests {
+  umbrella header "Pods-ContainerViewManager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

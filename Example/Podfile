@@ -7,6 +7,4 @@ end
 
 target 'ContainerViewManager_Tests', :exclusive => true do
   pod 'ContainerViewManager', :path => '../'
-
-  pod 'FBSnapshotTestCase'
 end

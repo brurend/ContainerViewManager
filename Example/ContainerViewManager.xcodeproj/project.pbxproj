@@ -21,6 +21,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		95190EAA1C9344D8005F4A49 /* CVMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EA91C9344D8005F4A49 /* CVMFirstViewController.m */; };
+		95190EAD1C9344E1005F4A49 /* CVMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EAC1C9344E1005F4A49 /* CVMSecondViewController.m */; };
+		95190EB01C9344F9005F4A49 /* CVMViewDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EAF1C9344F9005F4A49 /* CVMViewDataManager.m */; };
 		B2F985A209E3050E55C8BDC8 /* Pods_ContainerViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C4EB152EF2DD4FD0B8DDA5 /* Pods_ContainerViewManager_Tests.framework */; };
 		DCDA099DCBAE600DB71D0EB0 /* Pods_ContainerViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE8CB3A652FAE7EDE39F9FD /* Pods_ContainerViewManager_Example.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,12 @@
 		852610001CFD3C333FB6FECF /* ContainerViewManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContainerViewManager.podspec; path = ../ContainerViewManager.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8FCE536F605600CE5F25CF1B /* Pods-ContainerViewManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerViewManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerViewManager_Example/Pods-ContainerViewManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		95190EA81C9344D8005F4A49 /* CVMFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMFirstViewController.h; sourceTree = "<group>"; };
+		95190EA91C9344D8005F4A49 /* CVMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMFirstViewController.m; sourceTree = "<group>"; };
+		95190EAB1C9344E1005F4A49 /* CVMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMSecondViewController.h; sourceTree = "<group>"; };
+		95190EAC1C9344E1005F4A49 /* CVMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMSecondViewController.m; sourceTree = "<group>"; };
+		95190EAE1C9344F9005F4A49 /* CVMViewDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMViewDataManager.h; sourceTree = "<group>"; };
+		95190EAF1C9344F9005F4A49 /* CVMViewDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMViewDataManager.m; sourceTree = "<group>"; };
 		99C28C894788B5945D0E90F3 /* Pods-ContainerViewManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerViewManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerViewManager_Tests/Pods-ContainerViewManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A3C560019E0C71F5F3BEE439 /* Pods-ContainerViewManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerViewManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerViewManager_Example/Pods-ContainerViewManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,12 +139,9 @@
 		6003F593195388D20070C39A /* Example for ContainerViewManager */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* CVMAppDelegate.h */,
-				6003F59D195388D20070C39A /* CVMAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* CVMViewController.h */,
-				6003F5A6195388D20070C39A /* CVMViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				95190EA71C9344B5005F4A49 /* ViewControllers */,
+				95190EA61C9344AD005F4A49 /* Storyboards */,
+				95190EA51C9344A4005F4A49 /* AppDelegate */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for ContainerViewManager";
@@ -145,6 +151,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F595195388D20070C39A /* ContainerViewManager-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -180,6 +187,38 @@
 				1C73BC947D26CEAD0D51293E /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		95190EA51C9344A4005F4A49 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* CVMAppDelegate.h */,
+				6003F59D195388D20070C39A /* CVMAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		95190EA61C9344AD005F4A49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		95190EA71C9344B5005F4A49 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5A5195388D20070C39A /* CVMViewController.h */,
+				6003F5A6195388D20070C39A /* CVMViewController.m */,
+				95190EA81C9344D8005F4A49 /* CVMFirstViewController.h */,
+				95190EA91C9344D8005F4A49 /* CVMFirstViewController.m */,
+				95190EAB1C9344E1005F4A49 /* CVMSecondViewController.h */,
+				95190EAC1C9344E1005F4A49 /* CVMSecondViewController.m */,
+				95190EAE1C9344F9005F4A49 /* CVMViewDataManager.h */,
+				95190EAF1C9344F9005F4A49 /* CVMViewDataManager.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9BB978FBDC7E344C44786477 /* Pods */ = {
@@ -390,6 +429,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95190EAA1C9344D8005F4A49 /* CVMFirstViewController.m in Sources */,
+				95190EB01C9344F9005F4A49 /* CVMViewDataManager.m in Sources */,
+				95190EAD1C9344E1005F4A49 /* CVMSecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CVMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CVMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -467,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
