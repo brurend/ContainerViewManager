@@ -7,8 +7,13 @@
 //
 
 #import "CVMFirstViewController.h"
+#import "CVMSecondViewController.h"
+
+@import ContainerViewManager;
 
 @interface CVMFirstViewController ()
+
+@property (strong, nonatomic) ContainerViewSegueManager *container;
 
 @end
 
@@ -16,7 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    _container = (ContainerViewSegueManager*)self.parentViewController;
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ Example showing how to swap from one fiew to another using the Pod class.
+ */
+- (IBAction)swapButton:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    CVMSecondViewController *secondView = [storyboard instantiateViewControllerWithIdentifier:@"CVMSecondViewController"];
+    [_container swapFromViewController:self toViewController:secondView];
 }
-*/
 
 @end

@@ -56,10 +56,14 @@
             </objects>
             <point key="canvasLocation" x="-319" y="483"/>
         </scene>
-        <!--Container View Manager-->
+        <!--Container View Segue Manager-->
         <scene sceneID="ShY-MY-lFL">
             <objects>
-                <viewController storyboardIdentifier="ContainerViewManager" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9U0-yz-h1O" customClass="ContainerViewManager" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerViewSegueManager" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9U0-yz-h1O" customClass="ContainerViewSegueManager" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PrD-IE-gxf"/>
+                        <viewControllerLayoutGuide type="bottom" id="2b9-Ia-aAG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cto-OX-s1D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,18 +71,18 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="89V-uW-3Ax" kind="custom" identifier="FirstViewController" customClass="EmptySegue" id="J2h-FX-ivD"/>
-                        <segue destination="bpO-l3-PE6" kind="custom" identifier="SecondViewController" customClass="EmptySegue" id="biX-PE-lpx"/>
+                        <segue destination="89V-uW-3Ax" kind="custom" identifier="SecondViewController" customClass="EmptySegue" id="J2h-FX-ivD"/>
+                        <segue destination="bpO-l3-PE6" kind="custom" identifier="FirstViewController" customClass="EmptySegue" id="biX-PE-lpx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qg2-78-Tag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="493" y="1221"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="A1J-NU-pcz">
             <objects>
-                <viewController id="bpO-l3-PE6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CVMFirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bpO-l3-PE6" customClass="CVMFirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u9D-JM-aNM"/>
                         <viewControllerLayoutGuide type="bottom" id="rhI-14-uAx"/>
@@ -86,17 +90,37 @@
                     <view key="view" contentMode="scaleToFill" id="Fdm-Uz-hDb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQT-Ix-Jaw">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="V4K-Sg-Myl"/>
+                                    <constraint firstAttribute="width" constant="100" id="Y2B-J4-WuI"/>
+                                </constraints>
+                                <state key="normal" title="SWAP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="swapButton:" destination="bpO-l3-PE6" eventType="touchUpInside" id="Z48-BX-Qh7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oQT-Ix-Jaw" firstAttribute="centerY" secondItem="Fdm-Uz-hDb" secondAttribute="centerY" id="7EZ-r0-RA3"/>
+                            <constraint firstItem="oQT-Ix-Jaw" firstAttribute="centerX" secondItem="Fdm-Uz-hDb" secondAttribute="centerX" id="vx8-DH-kLD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8v-kQ-Dg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="941" y="1984"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="PMC-Bm-cPQ">
             <objects>
-                <viewController id="89V-uW-3Ax" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CVMSecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="89V-uW-3Ax" customClass="CVMSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZHE-f2-uoy"/>
                         <viewControllerLayoutGuide type="bottom" id="DUI-zj-hR9"/>
@@ -104,7 +128,27 @@
                     <view key="view" contentMode="scaleToFill" id="zil-7N-IiU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-FJ-0iO">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8rc-Lf-a5S"/>
+                                    <constraint firstAttribute="height" constant="100" id="SF0-Vx-z3N"/>
+                                </constraints>
+                                <state key="normal" title="SWAP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="swapButton:" destination="89V-uW-3Ax" eventType="touchUpInside" id="cbq-d6-Az6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eR0-FJ-0iO" firstAttribute="centerY" secondItem="zil-7N-IiU" secondAttribute="centerY" id="X5P-la-wdj"/>
+                            <constraint firstItem="eR0-FJ-0iO" firstAttribute="centerX" secondItem="zil-7N-IiU" secondAttribute="centerX" id="n1f-f9-U9Q"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2j-vW-JdN" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 //
 
 #import "CVMViewController.h"
+#import "CVMViewDataManager.h"
 
 @interface CVMViewController ()
 
@@ -19,7 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -29,13 +29,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ The view controller with the container view must have a weak reference to the ContainerViewSegueManager class,
+ so in the prepare for segue method you will be able to pass the reference to your ContainerDataManager subclass
+ to the SegueManager.
+ */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"embedSegue"]) {
         self.containerView = (ContainerViewSegueManager*)segue.destinationViewController;
+        self.containerView.containerDataClass = [CVMViewDataManager class];
     }
 }
 
+
+/**
+ shouldPerformSegueWithIdentifier returns YES by default so the view will always call prepareForSegue when initiated.
+ */
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
     return YES;
 }

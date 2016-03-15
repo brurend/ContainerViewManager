@@ -10,6 +10,6 @@
 
 @import ContainerViewManager;
 
-@interface CVMViewDataManager : NSObject <ContainerViewManagerDelegate>
+@interface CVMViewDataManager : ContainerDataManager
 
 @end

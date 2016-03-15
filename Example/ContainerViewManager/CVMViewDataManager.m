@@ -7,16 +7,37 @@
 //
 
 #import "CVMViewDataManager.h"
+#import "CVMFirstViewController.h"
+#import "CVMSecondViewController.h"
 
 @interface CVMViewDataManager ()
 
-@property (strong, nonatomic) UIViewController *parent;
-@property (strong, nonatomic) ContainerViewSegueManager *container;
-@property (strong, nonatomic) NSString *firstIdentifier;
-@property (strong, nonatomic) NSString *secondIdentifier;
+@property (strong, nonatomic) NSArray *array;
 
 @end
 
 @implementation CVMViewDataManager
+
+/**
+ Simple example of additionalSetup method override.
+ 
+ If the array is empty it presents SecondViewController,
+ otherwise it presentes FirstViewController.
+ */
+-(void)additionalSetup{
+    _array = @[@"1",@"2"];
+    
+    self.currentSegueIdentifier = @"FirstViewController";
+
+    if ([_array count] != 0) {
+        self.currentSegueIdentifier = @"FirstViewController";
+        self.parent.navigationItem.title = @"FIRST";
+    }
+    else {
+        self.currentSegueIdentifier = @"SecondViewController";
+        self.parent.navigationItem.title = @"SECOND";
+    }
+}
+
 
 @end

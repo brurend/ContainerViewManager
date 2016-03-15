@@ -24,6 +24,7 @@
 		95190EAA1C9344D8005F4A49 /* CVMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EA91C9344D8005F4A49 /* CVMFirstViewController.m */; };
 		95190EAD1C9344E1005F4A49 /* CVMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EAC1C9344E1005F4A49 /* CVMSecondViewController.m */; };
 		95190EB01C9344F9005F4A49 /* CVMViewDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95190EAF1C9344F9005F4A49 /* CVMViewDataManager.m */; };
+		95190EB81C974FA9005F4A49 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95190EB71C974FA9005F4A49 /* Launch Screen.storyboard */; };
 		B2F985A209E3050E55C8BDC8 /* Pods_ContainerViewManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C4EB152EF2DD4FD0B8DDA5 /* Pods_ContainerViewManager_Tests.framework */; };
 		DCDA099DCBAE600DB71D0EB0 /* Pods_ContainerViewManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE8CB3A652FAE7EDE39F9FD /* Pods_ContainerViewManager_Example.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		95190EAC1C9344E1005F4A49 /* CVMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMSecondViewController.m; sourceTree = "<group>"; };
 		95190EAE1C9344F9005F4A49 /* CVMViewDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMViewDataManager.h; sourceTree = "<group>"; };
 		95190EAF1C9344F9005F4A49 /* CVMViewDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVMViewDataManager.m; sourceTree = "<group>"; };
+		95190EB71C974FA9005F4A49 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		99C28C894788B5945D0E90F3 /* Pods-ContainerViewManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerViewManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerViewManager_Tests/Pods-ContainerViewManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A3C560019E0C71F5F3BEE439 /* Pods-ContainerViewManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerViewManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContainerViewManager_Example/Pods-ContainerViewManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* ContainerViewManager-Prefix.pch */,
+				95190EB71C974FA9005F4A49 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				95190EB81C974FA9005F4A49 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

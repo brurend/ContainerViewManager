@@ -9,5 +9,7 @@
 #ifndef ContainerViewManager_h
 #define ContainerViewManager_h
 
+#import "ContainerDataManager.h"
+#import "ContainerViewSegueManager.h"
 
 #endif /* ContainerViewManager_h */

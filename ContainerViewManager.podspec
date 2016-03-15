@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "ContainerViewManager"
   s.version          = "0.1.0"
-  s.summary          = "A short description of ContainerViewManager."
+  s.summary          = "ContainerViewManager helps you with linking more than one ViewController to the same ContainerView with segues in the Interface Builder"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/ContainerViewManager"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "bruno.rendeiro" => "bruno.rendeiro@concretesolutions.com.br" }
+  s.author           = { "brurend" => "brurend@hotmail.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ContainerViewManager.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.3'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
