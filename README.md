@@ -25,5 +25,5 @@ Bruno Rendeiro, brurend@hotmail.com
 
 ## License
 
-ContainerViewManager is available under the MIT license. See the [License](https://github.com/brurend/ContainerViewManager/License.md) file for more info.
+ContainerViewManager is available under the MIT license. See the [License](https://github.com/brurend/ContainerViewManager/blob/master/LICENSE.md) file for more info.
 
