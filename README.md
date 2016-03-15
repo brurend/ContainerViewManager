@@ -9,6 +9,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
 ContainerViewManager supports iOS 8.3+.
 
 ## Installation
@@ -26,5 +27,5 @@ Bruno Rendeiro, brurend@hotmail.com
 
 ## License
 
-ContainerViewManager is available under the MIT license. See the LICENSE file for more info.
+ContainerViewManager is available under the MIT license. See the [License](https://github.com/brurend/ContainerViewManager/blob/master/LICENSE.md) file for more info.
 
