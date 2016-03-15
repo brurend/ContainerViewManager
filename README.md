@@ -10,6 +10,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+ContainerViewManager supports iOS 8.3+.
+
 ## Installation
 
 ContainerViewManager is available through [CocoaPods](http://cocoapods.org). To install
