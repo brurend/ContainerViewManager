@@ -35,7 +35,7 @@
 }
 
 /**
- Example showing how to swap from one fiew to another using the Pod class.
+ * Example showing how to swap from one fiew to another using the Pod class.
  */
 - (IBAction)swapButton:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];

@@ -19,10 +19,11 @@
 @implementation CVMViewDataManager
 
 /**
- Simple example of additionalSetup method override.
- 
- If the array is empty it presents SecondViewController,
- otherwise it presentes FirstViewController.
+ *   Simple example of additionalSetup method override. [super additionalSetup] should always
+ *   be called in the end of this method
+ *
+ *   If the array is empty it presents SecondViewController,
+ *   otherwise it presentes FirstViewController.
  */
 -(void)additionalSetup{
     _array = @[@"1",@"2"];
@@ -37,8 +38,8 @@
         self.currentSegueIdentifier = @"SecondViewController";
         self.parent.navigationItem.title = @"SECOND";
     }
+    
     [super additionalSetup];
-
 }
 
 
