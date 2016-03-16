@@ -37,7 +37,10 @@
         self.currentSegueIdentifier = @"SecondViewController";
         self.parent.navigationItem.title = @"SECOND";
     }
+    [super additionalSetup];
+
 }
+
 
 
 @end

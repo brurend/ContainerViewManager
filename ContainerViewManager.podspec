@@ -30,12 +30,12 @@ ContainerViewManager helps you with linking more than one ViewController to the 
   s.platform     = :ios, '8.3'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'ContainerViewManager/Classes/*'
   s.resource_bundles = {
-    'ContainerViewManager' => ['Pod/Assets/*.png']
+    'ContainerViewManager' => ['ContainerViewManager/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'ContainerViewManager/Classes/ContainerViewManager.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

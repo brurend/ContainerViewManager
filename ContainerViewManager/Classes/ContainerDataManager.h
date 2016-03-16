@@ -77,4 +77,7 @@ typedef void(^CompletionBlock)(BOOL finished);
  */
 @property (weak, nonatomic) NSString *currentSegueIdentifier;
 
+-(void)additionalSetup __attribute__((objc_requires_super));
+
 @end
+

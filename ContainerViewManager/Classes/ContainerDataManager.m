@@ -22,7 +22,7 @@
 }
 
 -(void)additionalSetup{
-
+    NSAssert(self.currentSegueIdentifier.length > 0, @"You should pass a segue identifier");
 }
 
 -(void)performSegue {
