@@ -26,7 +26,6 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     _container = (ContainerViewSegueManager*)self.parentViewController;
-    self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {

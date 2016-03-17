@@ -92,23 +92,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQT-Ix-Jaw">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="200" y="0.0" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="V4K-Sg-Myl"/>
-                                    <constraint firstAttribute="width" constant="100" id="Y2B-J4-WuI"/>
+                                    <constraint firstAttribute="height" constant="50" id="V4K-Sg-Myl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Y2B-J4-WuI"/>
                                 </constraints>
                                 <state key="normal" title="SWAP">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="swapButton:" destination="bpO-l3-PE6" eventType="touchUpInside" id="Z48-BX-Qh7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This the first ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D4-U0-LjY">
+                                <rect key="frame" x="194" y="290" width="212.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVo-t8-gqd">
+                                <rect key="frame" x="276" y="340.5" width="51" height="31"/>
+                            </switch>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.46028601811183412" green="1" blue="0.9993417302953701" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="oQT-Ix-Jaw" firstAttribute="centerY" secondItem="Fdm-Uz-hDb" secondAttribute="centerY" id="7EZ-r0-RA3"/>
+                            <constraint firstItem="3D4-U0-LjY" firstAttribute="centerY" secondItem="Fdm-Uz-hDb" secondAttribute="centerY" id="7St-aS-zyN"/>
+                            <constraint firstItem="fVo-t8-gqd" firstAttribute="centerX" secondItem="Fdm-Uz-hDb" secondAttribute="centerX" id="JgG-eO-Wb9"/>
+                            <constraint firstItem="oQT-Ix-Jaw" firstAttribute="top" secondItem="u9D-JM-aNM" secondAttribute="bottom" id="LPQ-km-59E"/>
+                            <constraint firstItem="3D4-U0-LjY" firstAttribute="centerX" secondItem="Fdm-Uz-hDb" secondAttribute="centerX" id="Y1c-z0-pmk"/>
+                            <constraint firstItem="fVo-t8-gqd" firstAttribute="top" secondItem="3D4-U0-LjY" secondAttribute="bottom" constant="30" id="YSF-le-dV6"/>
                             <constraint firstItem="oQT-Ix-Jaw" firstAttribute="centerX" secondItem="Fdm-Uz-hDb" secondAttribute="centerX" id="vx8-DH-kLD"/>
                         </constraints>
                     </view>
@@ -130,23 +148,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eR0-FJ-0iO">
-                                <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="200" y="0.0" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="8rc-Lf-a5S"/>
-                                    <constraint firstAttribute="height" constant="100" id="SF0-Vx-z3N"/>
+                                    <constraint firstAttribute="width" constant="200" id="8rc-Lf-a5S"/>
+                                    <constraint firstAttribute="height" constant="50" id="SF0-Vx-z3N"/>
                                 </constraints>
                                 <state key="normal" title="SWAP">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="swapButton:" destination="89V-uW-3Ax" eventType="touchUpInside" id="cbq-d6-Az6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the second ViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92v-TU-yQt">
+                                <rect key="frame" x="172" y="290" width="256" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N97-Fd-TIw">
+                                <rect key="frame" x="248" y="341" width="104" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1SG-ni-XEA"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ukl-7M-GSk"/>
+                                </constraints>
+                            </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.35000448771412007" blue="0.35874513306966049" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eR0-FJ-0iO" firstAttribute="centerY" secondItem="zil-7N-IiU" secondAttribute="centerY" id="X5P-la-wdj"/>
+                            <constraint firstItem="92v-TU-yQt" firstAttribute="centerY" secondItem="zil-7N-IiU" secondAttribute="centerY" id="3xa-bP-mTR"/>
+                            <constraint firstItem="N97-Fd-TIw" firstAttribute="centerX" secondItem="zil-7N-IiU" secondAttribute="centerX" id="4jY-0M-gRT"/>
+                            <constraint firstItem="N97-Fd-TIw" firstAttribute="top" secondItem="92v-TU-yQt" secondAttribute="bottom" constant="30" id="UHH-ha-8ev"/>
+                            <constraint firstItem="92v-TU-yQt" firstAttribute="centerX" secondItem="zil-7N-IiU" secondAttribute="centerX" id="ZM8-pc-uqx"/>
+                            <constraint firstItem="eR0-FJ-0iO" firstAttribute="top" secondItem="ZHE-f2-uoy" secondAttribute="bottom" id="f65-r3-Uoa"/>
                             <constraint firstItem="eR0-FJ-0iO" firstAttribute="centerX" secondItem="zil-7N-IiU" secondAttribute="centerX" id="n1f-f9-U9Q"/>
                         </constraints>
                     </view>
