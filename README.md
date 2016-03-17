@@ -16,6 +16,10 @@ After dropping your container into your `UIViewController` you should name its e
 
 ![Screenshots/EmbedSegueSS.png](Screenshots/EmbedSegueSS.png)
 
+you also need to make sure the embed `UIViewController` custom class is `ContainerViewSegueManager`
+
+![Screenshots/ContainerViewSegueManagerSS.png](Screenshots/ContainerViewSegueManagerSS.png)
+
 and then in your `UIViewController` class override `prepareForSegue:sender:` with references to `ContainerViewSegueManager` and to your `ContainerDataManager` subclass, 
 note it's VERY important that you pass your class type and not an object of it!:
 
