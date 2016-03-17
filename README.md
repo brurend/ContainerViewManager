@@ -58,6 +58,7 @@ You should create a subclass of `ContainerDataManager` and override the `additio
 @interface CVMViewDataManager : ContainerDataManager
 
 @end
+```
 
 #### Choosing which `segueIdentifier` will be used
 
@@ -90,7 +91,7 @@ You can use `ContainerViewSegueManager swapFromViewController:toViewController` 
 ```objective-c
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     CVMFirstViewController *firstView = [storyboard instantiateViewControllerWithIdentifier:@"CVMFirstViewController"];
-    [_container swapFromViewController:self toViewController:firstView];
+    [ContainerViewSegueManager swapFromViewController:self toViewController:firstView];
 ```
 
 ## Requirements
