@@ -118,7 +118,7 @@ $ pod install
 
 ## Author
 
-Bruno Rendeiro, brurend@hotmail.com
+Bruno Rendeiro, brurend@hotmail.com.
 
 ## License
 
