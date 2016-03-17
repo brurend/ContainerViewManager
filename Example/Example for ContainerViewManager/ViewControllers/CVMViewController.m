@@ -38,13 +38,11 @@
  *  @param sender
  */
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    
     if ([segue.identifier isEqualToString:@"embedSegue"]) {
         self.containerView = (ContainerViewSegueManager*)segue.destinationViewController;
         self.containerView.containerDataClass = [CVMViewDataManager class];
     }
 }
-
 
 /**
  *   shouldPerformSegueWithIdentifier returns YES by default so the view will always call prepareForSegue when initiated.
