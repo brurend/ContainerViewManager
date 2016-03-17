@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "ContainerViewManager"
-  s.version          = "0.1.0"
-  s.summary          = "Helper classes to ContainerView usage with IE"
+  s.version          = "1.0.0"
+  s.summary          = "Helper classes to ContainerView usage with IE."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-ContainerViewManager helps you with linking more than one ViewController to the same ContainerView with segues in the Interface Builder
+ContainerViewManager helps you with linking more than one ViewController to the same ContainerView with segues in the Interface Builder.
                        DESC
 
   s.homepage         = "https://github.com/brurend/ContainerViewManager"
