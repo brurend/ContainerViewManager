@@ -25,59 +25,59 @@
 @class ContainerViewSegueManager;
 
 /**
- Completion block declaration. Is used to make sure the containerView wont attempt
- to performSegue before any data is being fetched asynchronously.
+ * Completion block declaration. Is used to make sure the containerView wont attempt
+ * to performSegue before any data is being fetched asynchronously.
  */
 typedef void(^CompletionBlock)(BOOL finished);
 
-/**
- Delegate with ContainerDataManager methods, your class should conform to this protocol.
- */
-@protocol ContainerViewManagerDelegate <NSObject>
+@interface ContainerDataManager : NSObject
 
 /**
- This method should be overridden with your application setup.
- Here is where you should call your methods to decide which
- segue identifier should be performed next.
+ *  Container data init method, is called by ContainerViewSegueManager and calls performSegue method.
+ *
+ *  @param parent    Container parent ViewController.
+ *  @param container Reference to its containerView.
+ *
+ *  @return ContainerDataManager instance.
  */
-@required
--(void)additionalSetup;
+-(instancetype)initWithParent:(UIViewController *)parent andContainer:(ContainerViewSegueManager *)container;
 
-@optional
 /**
- This method should be used if your class is doing any asynchronous request.
- If you do not use this method your performSegue method may be called before
- the request finished and may crash the application.
+ *  In this method all of the application set up should
+ */
+-(void)additionalSetup __attribute__((objc_requires_super));
+
+/**
+ *  Method responsible for performing the segue.
+ *  This method will not try to perform the segue before any asynchronous fetch
+ *  is still executing in fetchAPIDataWithCompletion.
+ */
+-(void)performSegue;
+
+/**
+ *  Any asynchronous call should happen in this method to make sure
+ *  performSegue won't execute before everything is ready for it.
+ *
+ *  @param finished Should be YES if everything was executed as expected.
  */
 -(void)fetchAPIDataWithCompletion:(CompletionBlock)finished;
 
 /**
- This is the class init, it will call the SegueManager performSegue. In most
- cases this method doesn't need to be overridden.
- */
--(instancetype)initWithParent:(UIViewController *)parent andContainer:(ContainerViewSegueManager *)container;
-
-@end
-
-@interface ContainerDataManager : NSObject <ContainerViewManagerDelegate>
-
-/**
- Reference to its parent ViewController class.
+ * Reference to its parent ViewController class.
  */
 @property (weak, nonatomic) UIViewController *parent;
 
 /**
- Reference to its ContainverViewSegueManager class.
+ * Reference to its ContainverViewSegueManager class.
  */
 @property (weak, nonatomic) ContainerViewSegueManager *container;
 
 /**
- This is the segue Identifier that will be used by the performSegue method.
- Your class should set it with your own segue set in the Interface Builder.
+ * This is the segue Identifier that will be used by the performSegue method.
+ * Your class should set it with your own segue set in the Interface Builder.
  */
 @property (weak, nonatomic) NSString *currentSegueIdentifier;
 
--(void)additionalSetup __attribute__((objc_requires_super));
 
 @end
 

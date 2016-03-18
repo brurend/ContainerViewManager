@@ -30,7 +30,7 @@
 }
 
 -(void)setUpDataManagerClass:(id)class {
-    if ([class conformsToProtocol:@protocol(ContainerViewManagerDelegate)]){
+    if ([class isSubclassOfClass:[ContainerDataManager class]]){
         class = [[class alloc] initWithParent:self.parentViewController andContainer:self];
     }
 }
