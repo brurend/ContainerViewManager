@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ContainerViewManager.svg?style=flat)](http://cocoapods.org/pods/ContainerViewManager)
 [![License](https://img.shields.io/cocoapods/l/ContainerViewManager.svg?style=flat)](http://cocoapods.org/pods/ContainerViewManager)
 [![Platform](https://img.shields.io/cocoapods/p/ContainerViewManager.svg?style=flat)](http://cocoapods.org/pods/ContainerViewManager)
+[![Build Status](https://travis-ci.org/brurend/ContainerViewManager.svg?branch=master)](https://travis-ci.org/brurend/ContainerViewManager)
 
 ## Usage
 
