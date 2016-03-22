@@ -1,6 +1,6 @@
 {
   "name": "ContainerViewManager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "Helper classes to ContainerView usage with IE.",
   "description": "ContainerViewManager helps you with linking more than one ViewController to the same ContainerView with segues in the Interface Builder.",
   "homepage": "https://github.com/brurend/ContainerViewManager",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/brurend/ContainerViewManager.git",
-    "tag": "1.0.1"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.3"

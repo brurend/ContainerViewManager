@@ -5,7 +5,11 @@ podfile: Example/Podfile
 before_install:
 - gem install fastlane
 - gem install cocoapods
-- pod install --project-directory=Example
+#- pod install --project-directory=Example
+
+branches:
+only:
+-master
 
 script:
 - set -o pipefail
