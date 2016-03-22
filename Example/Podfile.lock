@@ -1,14 +1,14 @@
 PODS:
-  - ContainerViewManager (0.1.0)
+  - ContainerViewManager (1.0.0)
 
 DEPENDENCIES:
   - ContainerViewManager (from `../`)
 
 EXTERNAL SOURCES:
   ContainerViewManager:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ContainerViewManager: c3e243742b6bae8d5cb4627564ffc6bf8a7f460c
+  ContainerViewManager: 30875f03f5086b86201fd2611b62df3382b82161
 
 COCOAPODS: 0.39.0
