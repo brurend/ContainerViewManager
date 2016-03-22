@@ -7,7 +7,6 @@
 //
 
 @import UIKit;
-@import ContainerViewManager;
 
 @interface CVMViewController : UIViewController
 

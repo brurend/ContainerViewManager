@@ -8,8 +8,7 @@
 
 #import "CVMFirstViewController.h"
 #import "CVMSecondViewController.h"
-
-@import ContainerViewManager;
+#import <ContainerViewManager/ContainerViewManager.h>
 
 @interface CVMFirstViewController ()
 

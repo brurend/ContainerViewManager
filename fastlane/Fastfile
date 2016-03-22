@@ -30,7 +30,8 @@ platform :ios do
   desc "Runs all the tests"
   lane :test do
     scan(
-    	workspace: "./Example/ContainerViewManager.xcworkspace"
+    	workspace: "./Example/ContainerViewManager.xcworkspace",
+    	scheme: "ContainerViewManager-Example"
     )
   end
 

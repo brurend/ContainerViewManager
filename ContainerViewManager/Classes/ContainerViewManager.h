@@ -26,5 +26,6 @@
 
 #import "ContainerDataManager.h"
 #import "ContainerViewSegueManager.h"
+#import "EmptySegue.h"
 
 #endif /* ContainerViewManager_h */

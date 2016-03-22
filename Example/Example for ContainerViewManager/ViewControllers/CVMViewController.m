@@ -8,6 +8,7 @@
 
 #import "CVMViewController.h"
 #import "CVMViewDataManager.h"
+#import <ContainerViewManager/ContainerViewManager.h>
 
 @interface CVMViewController ()
 

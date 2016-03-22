@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '21C053473950A9F1408A7534'
+               BlueprintIdentifier = '4A8290614F30B9BC334A26CD'
                BlueprintName = 'ContainerViewManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ContainerViewManager.framework'>
