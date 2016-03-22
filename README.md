@@ -111,7 +111,7 @@ it, simply add the following line to your `Podfile`:
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.3'
 
-pod 'ContainerViewManager', '~> 1.0'
+pod 'ContainerViewManager', '~> 1.0.1'
 ```
 
 Then, run the following command:
