@@ -9,7 +9,7 @@ before_install:
 
 branches:
 only:
--master
+- master
 
 script:
 - set -o pipefail
