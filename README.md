@@ -15,11 +15,11 @@
 
 After dropping your container into your `UIViewController` you should name its embedSegue identifier:
 
-![Screenshots/EmbedSegueScreenshot.png](Screenshots/EmbedSegueScreenshot.png)
+![Screenshots/EmbedSegueSS.png](Screenshots/EmbedSegueSS.png)
 
 you also need to make sure the embed `UIViewController` custom class is `ContainerViewSegueManager`
 
-![Screenshots/ContainerViewSegueManagerScreenshot.png](Screenshots/ContainerViewSegueManagerScreenshot.png)
+![Screenshots/ContainerViewSegueManagerSS.png](Screenshots/ContainerViewSegueManagerSS.png)
 
 and then in your `UIViewController` class override `prepareForSegue:sender:` with references to `ContainerViewSegueManager` and to your `ContainerDataManager` subclass, 
 note it's VERY important that you pass your class type and not an object of it!:
@@ -45,7 +45,7 @@ return YES;
 
 All segues from your `ContainerViewSegueManager` to your `UIViewController` should be of the type `EmptySegue` and have an identifier:
 
-![Screenshots/EmptySegueScreenshot.png](Screenshots/EmptySegueScreenshot.png)
+![Screenshots/EmptySegueSS.png](Screenshots/EmptySegueSS.png)
 
 ### ContainerDataManager
 
