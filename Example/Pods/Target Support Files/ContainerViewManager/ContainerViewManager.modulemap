@@ -1,6 +1,0 @@
-framework module ContainerViewManager {
-  umbrella header "ContainerViewManager-umbrella.h"
-
-  export *
-  module * { export * }
-}
