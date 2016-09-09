@@ -28,7 +28,7 @@ note it's VERY important that you pass your class type and not an object of it!:
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 if ([segue.identifier isEqualToString:@"embedSegue"]) {
 self.containerView = (ContainerViewSegueManager*)segue.destinationViewController;
-self.containerView.containerDataClass = [CVMViewDataManager class];
+self.containerView.containerDataClass = [ViewDataManager class];
 }
 }
 ```
@@ -55,12 +55,12 @@ All segues from your `ContainerViewSegueManager` to your `UIViewController` shou
 
 You should create a subclass of `ContainerDataManager` and override the `additionalSetup` method:
 
-`MyContainerDataManager.h`
+`MyContainerData.h`
 ```objective-c
 #import <Foundation/Foundation.h>
 #import <ContainerDataManager/ContainerDataManager.h>
 
-@interface CVMViewDataManager : ContainerDataManager
+@interface MyContainerData : ContainerDataManager
 
 @end
 ```
@@ -69,7 +69,7 @@ You should create a subclass of `ContainerDataManager` and override the `additio
 
 `ContainerDataManager additionalSetup` method will be overridden by your class implementation. You MUST call `[super additionalSetup]` and `self.currentSegueIdentifier` must NOT be nil.
 
-`MyContainerDataManager.m`
+`MyContainerData.m`
 ```objective-c
 -(void)additionalSetup{
 _array = @[@"1",@"2"];
@@ -95,7 +95,7 @@ You can use `ContainerViewSegueManager swapFromViewController:toViewController` 
 
 ```objective-c
 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-CVMFirstViewController *firstView = [storyboard instantiateViewControllerWithIdentifier:@"CVMFirstViewController"];
+FirstViewController *firstView = [storyboard instantiateViewControllerWithIdentifier:@"FirstViewController"];
 [ContainerViewSegueManager swapFromViewController:self toViewController:firstView];
 ```
 
