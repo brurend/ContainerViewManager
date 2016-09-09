@@ -130,8 +130,19 @@
                             <constraint firstItem="oQT-Ix-Jaw" firstAttribute="centerX" secondItem="Fdm-Uz-hDb" secondAttribute="centerX" id="vx8-DH-kLD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="cMB-6A-3oL" id="xVz-EB-zEu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8v-kQ-Dg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="cMB-6A-3oL">
+                    <connections>
+                        <outlet property="delegate" destination="bpO-l3-PE6" id="zKO-Kl-jNM"/>
+                        <outlet property="searchContentsController" destination="bpO-l3-PE6" id="wen-NX-hpa"/>
+                        <outlet property="searchResultsDataSource" destination="bpO-l3-PE6" id="xaH-JE-FDN"/>
+                        <outlet property="searchResultsDelegate" destination="bpO-l3-PE6" id="wLa-05-GgS"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="941" y="1984"/>
         </scene>
