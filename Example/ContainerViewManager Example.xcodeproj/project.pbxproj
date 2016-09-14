@@ -15,8 +15,9 @@
 		955B0A881D81D7EF0026B8F2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955B0A871D81D7EF0026B8F2 /* SecondViewController.m */; };
 		955B0A8B1D81D7F70026B8F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955B0A8A1D81D7F70026B8F2 /* ViewController.m */; };
 		955B0A8E1D81D8060026B8F2 /* MyContainerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 955B0A8D1D81D8060026B8F2 /* MyContainerData.m */; };
-		955B0AAE1D81E9310026B8F2 /* ContainerViewManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955B0AAD1D81E9310026B8F2 /* ContainerViewManager.framework */; };
 		955B0AAF1D8313D60026B8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955B0A811D81D76E0026B8F2 /* Main.storyboard */; };
+		95BCD4461D89CFCC00F13FC4 /* ContainerViewManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BCD4451D89CFCC00F13FC4 /* ContainerViewManager.framework */; };
+		95BCD4471D89CFCC00F13FC4 /* ContainerViewManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95BCD4451D89CFCC00F13FC4 /* ContainerViewManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				95BCD4471D89CFCC00F13FC4 /* ContainerViewManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +51,7 @@
 		955B0A8A1D81D7F70026B8F2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		955B0A8C1D81D8060026B8F2 /* MyContainerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyContainerData.h; sourceTree = "<group>"; };
 		955B0A8D1D81D8060026B8F2 /* MyContainerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyContainerData.m; sourceTree = "<group>"; };
-		955B0AAD1D81E9310026B8F2 /* ContainerViewManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContainerViewManager.framework; path = "../Debug-iphonesimulator/ContainerViewManager.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BCD4451D89CFCC00F13FC4 /* ContainerViewManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContainerViewManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955B0AAE1D81E9310026B8F2 /* ContainerViewManager.framework in Frameworks */,
+				95BCD4461D89CFCC00F13FC4 /* ContainerViewManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +116,7 @@
 		955B0A9A1D81D9350026B8F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				955B0AAD1D81E9310026B8F2 /* ContainerViewManager.framework */,
+				95BCD4451D89CFCC00F13FC4 /* ContainerViewManager.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 				TargetAttributes = {
 					955B0A491D81D2650026B8F2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PN7U9JJPAS;
 					};
 				};
 			};
@@ -303,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PN7U9JJPAS;
 				INFOPLIST_FILE = "ContainerViewManager Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -315,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PN7U9JJPAS;
 				INFOPLIST_FILE = "ContainerViewManager Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

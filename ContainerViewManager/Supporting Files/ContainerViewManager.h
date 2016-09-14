@@ -22,8 +22,7 @@
 //  THE SOFTWARE.
 
 #ifndef ContainerViewManager_h
-#define ContainerViewManager_hb
-
+#define ContainerViewManager_h
 #import "ContainerDataManager.h"
 #import "ContainerViewSegueManager.h"
 
