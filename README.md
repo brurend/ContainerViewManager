@@ -26,10 +26,10 @@ note it's VERY important that you pass your class type and not an object of it!:
 
 ```objective-c
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-if ([segue.identifier isEqualToString:@"embedSegue"]) {
-self.containerView = (ContainerViewSegueManager*)segue.destinationViewController;
-self.containerView.containerDataClass = [ViewDataManager class];
-}
+  if ([segue.identifier isEqualToString:@"embedSegue"]) {
+    self.containerView = (ContainerViewSegueManager*)segue.destinationViewController;
+    self.containerView.containerDataClass = [ViewDataManager class];
+  }
 }
 ```
 
@@ -37,7 +37,7 @@ Make sure `shouldPerformSegueWithIdentifier:sender:` returns `YES`
 
 ```objective-c
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-return YES;
+  return YES;
 }
 ```
 
@@ -72,20 +72,20 @@ You should create a subclass of `ContainerDataManager` and override the `additio
 `MyContainerData.m`
 ```objective-c
 -(void)additionalSetup{
-_array = @[@"1",@"2"];
+  self.array = @[@"1",@"2"];
 
-self.currentSegueIdentifier = @"FirstViewController";
+  self.currentSegueIdentifier = @"FirstViewController";
 
-if ([_array count] != 0) {
-self.currentSegueIdentifier = @"FirstViewController";
-self.parent.navigationItem.title = @"FIRST";
-}
-else {
-self.currentSegueIdentifier = @"SecondViewController";
-self.parent.navigationItem.title = @"SECOND";
-}
+  if ([self.array count] != 0) {
+    self.currentSegueIdentifier = @"FirstViewController";
+    self.parent.navigationItem.title = @"FIRST";
+  }
+  else {
+    self.currentSegueIdentifier = @"SecondViewController";
+    self.parent.navigationItem.title = @"SECOND";
+  }
 
-[super additionalSetup];
+  [super additionalSetup];
 }
 ```
 
